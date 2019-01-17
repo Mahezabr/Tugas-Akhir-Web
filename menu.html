@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu MJF</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+
+  	<script src="js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		ul {
+		    list-style-type: none;
+		    margin: 1%;
+		    padding: 0;
+		    overflow: hidden;
+		    background-color: #F4A460;
+		    border-radius: 20px;
+		    box-shadow: 10px 10px 12px rgba(0,0,0,0.2);
+		}
+
+			li {
+			    float: right;
+			}
+
+			li a {
+			    display: block;
+			    color: white;
+			    text-align: center;
+			    padding: 14px 16px;
+			    text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+			    background-color: #FFEFD5;
+			}
+
+			.active {
+			    background-color: #F4A460;
+			}
+
+			.dropdown-content 
+		{
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a 
+		{
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.dropdown:hover .dropdown-content 
+		{
+			display: block;
+		}
+
+		.inputan-navbar
+		{
+			height:35px;
+			width:250px;
+			border: 3px solid #fff;
+			border-radius: 30px;
+			margin: 3% 0% 0% -5% ;
+		}
+
+		.tombol-nav
+		{
+			height: 35px;
+			width: 60px;
+			border-radius: 20px;
+			background-color: #DEB887;
+			margin: 15% -13%;
+			font-family: cursive; 
+		}
+
+		.font-ukuran-atas
+		{
+			font-size: 45px;
+			font-family: stencil;
+			text-align: center;
+			text-shadow: 10px 10px 12px rgba(0,0,0,0.2); 
+		}
+
+		.garis-horizontal
+		{
+			height: 3px;
+			width: 100%;
+			background-color:red;
+			box-shadow: 10px 10px 12px rgba(0,0,0,0.2); 
+		}
+		.kotak-footer
+		{
+			height:300px;
+			width:100%;
+			padding: 10px;
+			background-color:#DEB887;
+			margin: 0% 0% 0% 0% ;
+
+		}
+		.garis-horizontal2
+		{
+			height: 3px;
+			width: 100%;
+			background-color:black;
+
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<ul>
+		  <li style="float:left"><a class="active font-navbar-merk" href="index.html">
+		  &nbsp &nbsp Maheza Japanese Food</a></li>
+		   <li ><a class="active font-navbar-lainnya" href="about.html">About</a></li>
+		   <li>
+				<form name="tombol-cari" action="simpanformregistrasi.php" method="get">
+					<input type="submit" name="btnsimpan" value="Cari" class="tombol-nav btn btn-secondary" >
+				</form>
+			</li>
+		    <li>
+		    	<form name="cari" action="simpanformregistrasi.php" method="search">
+					<input type="text" name="nama" class="inputan-navbar btn btn-light" placeholder="search.." >
+				</form>
+			</li>
+			
+		  	<li style="float:left"><a class="font-navbar-lainnya" href="Menu.html">Menu</a></li>
+			<li style="float:left"><a class="font-navbar-lainnya" href="beli.html">Beli</a></li>
+			<li style="float:left"><a class="font-navbar-lainnya" href="kontak.html">Contact</a></li>
+			<li style="float:left"><a class="font-navbar-lainnya" href="loginmember.html">Login</a></li>
+			<li style="float:left"><a class="font-navbar-lainnya" href="daftarmember.html">Daftar</a></li>
+		</ul>
+	</header>
+	<main>
+		<font  class="font-ukuran-atas"><br>
+			&nbsp &nbsp	&nbspMaheza Japanese Food &nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp &nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp&nbsp &nbspMenu
+		</font>
+
+		<hr class="garis-horizontal" >
+		<div class="container">
+			<table class="table table-hover">
+			    <thead>
+			      <tr>
+			        <th>Daftar</th>
+			        <th>Sushi - Sashimi</th>
+			        <th>Keterangan</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>JMF Sushi </td>
+			        <td><img src="img\sushi4.jpg" width="50%" height="200px" class="foto"></td>
+			        <td>Perpaduan sushi - sashimi yang dibalut <br>oleh daging ikan tuna dan<br> ikan salmon yang segar</td>
+			      </tr>
+			      <tr>
+			        <td>JMF Special</td>
+			        <td><img src="img\sushi2.jpg" width="50%" height="200px" class="foto"></td>
+			        <td>
+			        	Paket ini menyediakan sushi dan sashimi<br>
+			        	dengan ekstra telur ikan dan ikan salmon<br>
+			        	dan ikan tuna segar
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>Original Sushi</td>
+			        <td><img src="img\sushi3.jpg" width="50%" height="200px" class="foto"></td>
+			        <td>
+			        	Sushi dengan rumput laut pilihan dan<br>
+			        	rumput laut impor dari jepang
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>Sashimi Special</td>
+			        <td><img src="img\sushi1.jpg" width="50%" height="200px" class="foto"></td>
+			        <td>
+			        	Sashimi yang dibalut daging salmon<br>
+			        	segar , daging kepiting pilihan<br>
+			        	dan udang segar
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>JMF Duo</td>
+			        <td><img src="img\sushi-sashimi.jpg" width="50%" height="200px" class="foto"></td>
+			        <td>
+			        	Berisi sushi original dan sashimi<br>
+			        	yang dibalut dengan daging tuna segar
+
+			        </td>
+			      </tr>
+			</table>
+			<table class="table table-hover">
+			    <thead>
+			      <tr>
+			        <th>Daftar</th>
+			        <th>Ramen</th>
+			        <th>Keterangan</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>JMF Ramen </td>
+			        <td><img src="img\ramen4.jpg" width="50%" height="200px" class="foto"></td>
+			        <td>
+			        	Ramen dengan ekstra daging sapi <br>
+			        	dan ekstra sayuran segar<br>
+			      </tr>
+			      <tr>
+			        <td>Seafood Ramen</td>
+			        <td><img src="img\ramen5.jpg" width="50%" height="200px" class="foto"></td>
+			        <td>
+			        	Ramen dengan kuah kaldu pilihan<br>
+			        	dengan ekstra udang goreng<br>
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>Deluxe Ramen</td>
+			        <td><img src="img\ramen6.jpg" width="50%" height="200px" class="foto"></td>
+			        <td>
+			        	Ramen dengan kuah kaldu pilihan<br>
+			        	dengan telur meler setengah matang<br>
+			        	dan sayuran serta daging ikan salmon
+			        </td>
+			      </tr>
+			</table>
+			<table class="table table-hover">
+			    <thead>
+			      <tr>
+			        <th>Daftar</th>
+			        <th>Other</th>
+			        <th>Keterangan</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Japanese Batagor </td>
+			        <td><img src="img\japanesebatagor.jpg" width="50%" height="200px" class="foto"></td>
+			        <td>
+			        	Batagor dengan daging sapi pilihan <br>
+			        	dan ekstra sayuran segar di dalamnya<br>
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>Mochi</td>
+			        <td><img src="img\mochi.jpg" width="50%" height="200px" class="foto"></td>
+			        <td>
+			        	Mochi dengan ekstra topping<br>
+			        	teh hijau<br>
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>Teh Hijau</td>
+			        <td><img src="img\tea.png" width="50%" height="200px" class="foto"></td>
+			        <td>
+			        	Teh hijau asli impor dari jepang<br>
+			        	dengan kualitas terbaik
+			        </td>
+			      </tr>
+			     
+			     
+			</table>
+		</div>
+	</main>
+	<FOOTER>
+		<div class="kotak-footer">
+		&nbsp	&nbsp &nbsp
+			&nbsp &nbsp	&nbsp&nbsp &nbsp	&nbsp &nbsp	&nbsp
+		<h2 align="center">Hubungi kami</h2>
+		<hr class="garis-horizontal2">
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				&nbsp <td><img src="img\logofacebook.png" width="15px" height="15px "/></td>: Maheza Japanese Food
+				&nbsp <td><img src="img\logoig.jpg" width="15px" height="15px "/></td>: @MahezaJF
+				&nbsp <td><img src="img\logoline.png" width="15px" height="15px "/></td>: maheza.jf
+				&nbsp <td><img src="img\logoemail.jpg" width="15px" height="15px "/></td>: mahezajf@gmail.com
+		</div>
+	</FOOTER>
+</body>
+</html>

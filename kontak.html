@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu MJF</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+
+  	<script src="js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		ul {
+		    list-style-type: none;
+		    margin: 1%;
+		    padding: 0;
+		    overflow: hidden;
+		    background-color: #F4A460;
+		    border-radius: 20px;
+		    box-shadow: 10px 10px 12px rgba(0,0,0,0.2);
+		}
+
+			li {
+			    float: right;
+			}
+
+			li a {
+			    display: block;
+			    color: white;
+			    text-align: center;
+			    padding: 14px 16px;
+			    text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+			    background-color: #FFEFD5;
+			}
+
+			.active {
+			    background-color: #F4A460;
+			}
+
+			.dropdown-content 
+		{
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a 
+		{
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.dropdown:hover .dropdown-content 
+		{
+			display: block;
+		}
+
+		.inputan-navbar
+		{
+			height:35px;
+			width:250px;
+			border: 3px solid #fff;
+			border-radius: 30px;
+			margin: 3% 0% 0% -5% ;
+		}
+
+		.tombol-nav
+		{
+			height: 35px;
+			width: 60px;
+			border-radius: 20px;
+			background-color: #DEB887;
+			margin: 15% -13%;
+			font-family: cursive; 
+		}
+
+		.font-ukuran-atas
+		{
+			font-size: 45px;
+			font-family: stencil;
+			text-align: center;
+			text-shadow: 10px 10px 12px rgba(0,0,0,0.2); 
+		}
+
+		.garis-horizontal
+		{
+			height: 3px;
+			width: 100%;
+			background-color:red;
+			box-shadow: 10px 10px 12px rgba(0,0,0,0.2); 
+		}
+		.kotak-footer
+		{
+			height:300px;
+			width:100%;
+			padding: 10px;
+			background-color:#DEB887;
+			margin: 0% 0% 0% 0% ;
+
+		}
+		.garis-horizontal2
+		{
+			height: 3px;
+			width: 100%;
+			background-color:black;
+
+		}
+
+		.font-ukuran-atas
+		{
+			font-size: 45px;
+			font-family: stencil;
+			text-align: center;
+			text-shadow: 10px 10px 12px rgba(0,0,0,0.2); 
+		}
+
+		.garis-horizontal
+		{
+			height: 3px;
+			width: 100%;
+			background-color:red;
+			box-shadow: 10px 10px 12px rgba(0,0,0,0.2); 
+		}
+
+		.kotak-atas
+		{
+			height:550px;
+			width:80%;
+			padding: 10px;
+			border: 2px solid #00FFFF;
+			background-color:#FF7F50;
+			margin: 2% 0% 0% 10% ;
+			border-radius: 20px;
+			box-shadow: 10px 10px 12px rgba(0,0,0,0.2); 
+		}
+
+		.garis-horizontal2
+		{
+			height: 3px;
+			width: 100%;
+			background-color:black;
+
+		}
+
+		.font-judul
+		{
+			font-size: 40px;
+			font-family: cursive;
+			text-align: center;
+			
+		}
+
+		.inputan-navbar
+		{
+			height:35px;
+			width:250px;
+			border: 3px solid #fff;
+			border-radius: 30px;
+			margin: 3% 0% 0% -5% ;
+		}
+
+		.inputan1
+		{
+			height:100px;
+			width:400px;
+			border: 3px solid #fff;
+			border-radius: 30px;
+			margin: 0% 0% 0% 0% ;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<ul>
+		  <li style="float:left"><a class="active font-navbar-merk" href="index.html">
+		  &nbsp &nbsp Maheza Japanese Food</a></li>
+		   <li ><a class="active font-navbar-lainnya" href="about.html">About</a></li>
+		   <li>
+				<form name="tombol-cari" action="simpanformregistrasi.php" method="get">
+					<input type="submit" name="btnsimpan" value="Cari" class="tombol-nav btn btn-secondary" >
+				</form>
+			</li>
+		    <li>
+		    	<form name="cari" action="simpanformregistrasi.php" method="search">
+					<input type="text" name="nama" class="inputan-navbar btn btn-light" placeholder="search.." >
+				</form>
+			</li>
+			
+		  	<li style="float:left"><a class="font-navbar-lainnya" href="Menu.html">Menu</a></li>
+			<li style="float:left"><a class="font-navbar-lainnya" href="beli.html">Beli</a></li>
+			<li style="float:left"><a class="font-navbar-lainnya" href="kontak.html">Contact</a></li>
+			<li style="float:left"><a class="font-navbar-lainnya" href="loginmember.html">Login</a></li>
+			<li style="float:left"><a class="font-navbar-lainnya" href="daftarmember.html">Daftar</a></li>
+		</ul>
+	</header>
+	<main>
+		<font  class="font-ukuran-atas"><br>
+			&nbsp &nbsp	&nbspMaheza Japanese Food &nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp &nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp&nbsp &nbspContact
+		</font>
+
+		<hr class="garis-horizontal" >
+
+		<div class="kotak-atas">
+
+		<font  class="font-judul" >
+			<br>&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			 Saran n Kritik
+		</font>
+		<hr class="garis-horizontal2">
+
+		<form name="cari" action="simpanformregistrasi.php" method="search">
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			<input type="text" name="nama" class="inputan-navbar btn btn-light" placeholder="Nama.." ><br>
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			<input type="text" name="E-mail" class="inputan-navbar btn btn-light" placeholder="E-mail" ><br><br>
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			&nbsp &nbsp	&nbsp 
+			<textarea name="komentar" class="inputan1" > </textarea><br><br>
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			&nbsp &nbsp	&nbsp&nbsp &nbsp	&nbsp &nbsp	&nbsp	
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp
+			&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	&nbsp &nbsp	
+			<input type="submit" name="btnsimpan" value="Submit" class="btn btn-secondary" > 
+			<input type="reset" name="btnbatal" value="Cancel" class="btn btn-secondary" > 
+		</form>
+			
+		</div>
+		<br><br>
+
+	</main>
+	<FOOTER>
+		<div class="kotak-footer">
+		&nbsp	&nbsp &nbsp
+			&nbsp &nbsp	&nbsp&nbsp &nbsp	&nbsp &nbsp	&nbsp
+		<h2 align="center">Hubungi kami</h2>
+		<hr class="garis-horizontal2">
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				&nbsp <td><img src="img\logofacebook.png" width="15px" height="15px "/></td>: Maheza Japanese Food
+				&nbsp <td><img src="img\logoig.jpg" width="15px" height="15px "/></td>: @MahezaJF
+				&nbsp <td><img src="img\logoline.png" width="15px" height="15px "/></td>: maheza.jf
+				&nbsp <td><img src="img\logoemail.jpg" width="15px" height="15px "/></td>: mahezajf@gmail.com
+		</div>
+	</FOOTER>
+</body>
+</html>
